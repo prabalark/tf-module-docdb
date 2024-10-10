@@ -1,6 +1,6 @@
 resource "aws_docdb_cluster" "main" {
   cluster_identifier              = ""
-  engine                          = ""
+  engine                          = "docdb"
   engine_version                  = ""
   master_username                 = ""
   master_password                 = ""
