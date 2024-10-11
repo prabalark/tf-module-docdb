@@ -34,7 +34,7 @@ resource "aws_docdb_cluster" "main" {
   preferred_backup_window         = "07:00-09:00"
   skip_final_snapshot             = true
   db_subnet_group_name            =
-  vpc_security_group_ids          =
+  vpc_security_group_ids          = [aws_security_group.main.id]
   port                            = var.port
   db_cluster_parameter_group_name =
   storage_encrypted               = true
