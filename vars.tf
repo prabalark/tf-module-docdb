@@ -5,7 +5,9 @@ variable "name" {
 }
 variable "env" {}
 variable "engine_version" {}
-variable "port" {}
+variable "port" {
+  default = 27017
+}
 variable "kms_key_id" {}
 variable "tags" {}
 variable "subnets" {}
