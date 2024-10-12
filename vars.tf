@@ -8,7 +8,7 @@ variable "engine_version" {}
 variable "port" {
   default = 27017
 }
-variable "kms_key_id" {}
+variable "kms_arn" {}
 variable "tags" {}
 variable "subnets" {}
 variable "instance_class" {}

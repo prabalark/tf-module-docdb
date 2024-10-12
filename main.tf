@@ -60,6 +60,6 @@ resource "aws_docdb_cluster" "main" {
   port                            = var.port
   db_cluster_parameter_group_name = aws_docdb_cluster_parameter_group.main.name
   storage_encrypted               = true
-  kms_key_id                      = var.kms_key_id
+  kms_key_id                      = var.kms_arn
   tags                            = merge(var.tags, {Name="${var.name}-${var.env}-docdb"})
 }
