@@ -7,3 +7,5 @@ variable "port" {}
 variable "kms_key_id" {}
 variable "tags" {}
 variable "subnets" {}
+variable "instance_class" {}
+variable "instance_count" {}
