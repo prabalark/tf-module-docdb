@@ -24,6 +24,15 @@ resource "aws_security_group" "main" {
   }
 }
 
+resource "aws_docdb_subnet_group" "default" {
+  name       = "${var.name}-${var.env}"
+  subnet_ids = [aws_subnet.frontend.id, aws_subnet.backend.id]
+
+  tags = {
+    Name = "My docdb subnet group"
+  }
+}
+
 resource "aws_docdb_cluster" "main" {
   cluster_identifier              = "${var.name}-${var.env}"
   engine                          = "docdb"
