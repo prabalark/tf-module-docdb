@@ -1,6 +1,8 @@
 variable "vpc_id" {}
 variable "allow_app_cidr" {}
-variable "name" {}
+variable "name" {
+  default = "docdb"
+}
 variable "env" {}
 variable "engine_version" {}
 variable "port" {}
