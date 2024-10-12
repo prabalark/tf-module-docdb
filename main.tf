@@ -8,7 +8,7 @@ resource "aws_security_group" "main" {
     protocol    = "tcp"
     from_port   = var.port
     to_port     = var.port
-    cidr_blocks = var.allow_app_cidr # sunet_cidrs from internet
+    cidr_blocks = var.allow_db_cidr # sunet_cidrs from internet
   }
 
   egress {

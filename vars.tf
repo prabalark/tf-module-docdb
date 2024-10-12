@@ -1,5 +1,5 @@
 variable "vpc_id" {}
-variable "allow_app_cidr" {}
+variable "allow_db_cidr" {}
 variable "name" {
   default = "docdb"
 }
