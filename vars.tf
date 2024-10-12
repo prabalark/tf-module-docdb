@@ -6,3 +6,4 @@ variable "engine_version" {}
 variable "port" {}
 variable "kms_key_id" {}
 variable "tags" {}
+variable "subnets" {}
