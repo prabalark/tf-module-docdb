@@ -20,7 +20,7 @@ resource "aws_security_group" "main" {
   }
 
   tags = {
-    Name = merge(var.tags, {Name="${var.name}-${var.env}-docdb"})
+    Name = merge(var.tags, {Name="${var.name}-${var.env}-docdbsg"})
   }
 }
 
