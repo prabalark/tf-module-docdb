@@ -61,5 +61,5 @@ resource "aws_docdb_cluster" "main" {
   db_cluster_parameter_group_name = aws_docdb_cluster_parameter_group.main.name
   storage_encrypted               = true
   kms_key_id                      = var.kms_arn
-  tags                            = merge(var.tags, {Name="${var.name}-${var.env}-docdb"})
+  tags                            = merge(var.tags, {Name="${var.name}-${var.env}"})
 }
